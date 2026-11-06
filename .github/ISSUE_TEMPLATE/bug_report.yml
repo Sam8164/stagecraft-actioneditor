@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a bug in Stagecraft Action Editor
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please fill in every required field — incomplete reports are hard to reproduce.
+        Do not paste your asset source files; attach screenshots instead.
+
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity version
+      description: "Full version, e.g. 2022.3.62f1"
+      placeholder: "2022.3.x"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pipeline
+    attributes:
+      label: Render pipeline
+      options:
+        - URP
+        - Built-in (not supported)
+        - HDRP (not supported)
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Stagecraft Action Editor version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps that reliably trigger the problem.
+      placeholder: |
+        1. Open Tools > Stagecraft Action Editor
+        2. Drag ...
+        3. Press Play
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and console errors
+      description: Paste the full error text (not only a screenshot of it).
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots / video
+      description: Drag and drop images or a short screen recording here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Project setup, other packages, or anything else that may matter.
+    validations:
+      required: false

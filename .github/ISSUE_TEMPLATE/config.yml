@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User manual (PDF)
+    url: https://github.com/Sam8164/stagecraft-actioneditor/blob/main/docs/Stagecraft%20Action%20Editor%20and%20Target%20Range%20Guide.pdf
+    about: Read the manual before filing a bug — most setup questions are answered there.
+  - name: Asset Store page
+    url: https://assetstore.unity.com/
+    about: Purchase, licensing, and refund questions are handled by the Asset Store.
